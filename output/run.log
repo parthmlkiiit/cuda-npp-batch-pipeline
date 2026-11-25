@@ -1,0 +1,237 @@
+==== npp_batch: CUDA NPP batch image pipeline ====
+GPU            : NVIDIA GeForce RTX 4050 Laptop GPU (sm_89, 6.0 GB, 20 SMs)
+CUDA runtime   : 12.9
+NPP            : 12.4.1
+input dir      : data/sipi
+output dir     : output
+pipeline       : gray -> equalize -> gauss -> canny
+gauss size     : 5
+canny low/high : 60 / 150
+max images     : 0
+compare images : yes (height 384)
+
+processing 210 images from data/sipi
+
+[  1/210] aerials_2.1.01                512x512  x3  up   0.26  gpu   41.56  down   0.41 ms  ok
+[  2/210] aerials_2.1.02                512x512  x3  up   0.16  gpu    0.80  down   0.28 ms  ok
+[  3/210] aerials_2.1.03                512x512  x3  up   0.16  gpu    0.89  down   0.25 ms  ok
+[  4/210] aerials_2.1.04                512x512  x3  up   0.17  gpu    0.97  down   0.26 ms  ok
+[  5/210] aerials_2.1.05                512x512  x3  up   0.14  gpu    0.72  down   0.32 ms  ok
+[  6/210] aerials_2.1.06                512x512  x3  up   0.15  gpu    0.80  down   0.28 ms  ok
+[  7/210] aerials_2.1.07                512x512  x3  up   0.12  gpu    0.77  down   0.27 ms  ok
+[  8/210] aerials_2.1.08                512x512  x3  up   0.17  gpu    0.87  down   0.29 ms  ok
+[  9/210] aerials_2.1.09                512x512  x3  up   0.28  gpu    0.89  down   0.35 ms  ok
+[ 10/210] aerials_2.1.10                512x512  x3  up   0.20  gpu    0.94  down   0.24 ms  ok
+[ 11/210] aerials_2.1.11                512x512  x3  up   0.14  gpu    0.81  down   0.29 ms  ok
+[ 12/210] aerials_2.1.12                512x512  x3  up   0.17  gpu    0.71  down   0.30 ms  ok
+[ 13/210] aerials_2.2.01               1024x1024 x3  up   0.78  gpu    1.27  down   0.61 ms  ok
+[ 14/210] aerials_2.2.02               1024x1024 x3  up   0.78  gpu    1.26  down   0.83 ms  ok
+[ 15/210] aerials_2.2.03               1024x1024 x3  up   0.73  gpu    1.17  down   0.63 ms  ok
+[ 16/210] aerials_2.2.04               1024x1024 x3  up   0.73  gpu    1.17  down   0.60 ms  ok
+[ 17/210] aerials_2.2.05               1024x1024 x3  up   0.76  gpu    1.34  down   0.66 ms  ok
+[ 18/210] aerials_2.2.06               1024x1024 x3  up   0.71  gpu    1.24  down   0.66 ms  ok
+[ 19/210] aerials_2.2.07               1024x1024 x3  up   0.66  gpu    1.18  down   0.65 ms  ok
+[ 20/210] aerials_2.2.08               1024x1024 x3  up   0.80  gpu    1.96  down   0.60 ms  ok
+[ 21/210] aerials_2.2.09               1024x1024 x3  up   0.70  gpu    1.11  down   0.74 ms  ok
+[ 22/210] aerials_2.2.10               1024x1024 x3  up   0.73  gpu    1.38  down   0.70 ms  ok
+[ 23/210] aerials_2.2.11               1024x1024 x3  up   0.78  gpu    1.30  down   0.63 ms  ok
+[ 24/210] aerials_2.2.12               1024x1024 x3  up   0.94  gpu    1.12  down   0.67 ms  ok
+[ 25/210] aerials_2.2.13               1024x1024 x3  up   0.76  gpu    1.10  down   0.65 ms  ok
+[ 26/210] aerials_2.2.14               1024x1024 x3  up   0.72  gpu    1.19  down   0.87 ms  ok
+[ 27/210] aerials_2.2.15               1024x1024 x3  up   0.81  gpu    1.13  down   0.83 ms  ok
+[ 28/210] aerials_2.2.16               1024x1024 x3  up   0.76  gpu    1.40  down   0.74 ms  ok
+[ 29/210] aerials_2.2.17               1024x1024 x3  up   0.67  gpu    1.13  down   0.68 ms  ok
+[ 30/210] aerials_2.2.18               1024x1024 x3  up   0.75  gpu    1.09  down   0.66 ms  ok
+[ 31/210] aerials_2.2.19               1024x1024 x3  up   0.80  gpu    1.41  down   0.69 ms  ok
+[ 32/210] aerials_2.2.20               1024x1024 x3  up   0.74  gpu    1.12  down   0.70 ms  ok
+[ 33/210] aerials_2.2.21               1024x1024 x3  up   0.77  gpu    1.28  down   0.60 ms  ok
+[ 34/210] aerials_2.2.22               1024x1024 x3  up   0.71  gpu    1.13  down   0.64 ms  ok
+[ 35/210] aerials_2.2.23               1024x1024 x3  up   0.71  gpu    1.07  down   0.64 ms  ok
+[ 36/210] aerials_2.2.24               1024x1024 x3  up   0.93  gpu    1.30  down   0.73 ms  ok
+[ 37/210] aerials_3.2.25               1024x1024 x1  up   0.27  gpu    1.03  down   0.65 ms  ok
+[ 38/210] aerials_wash-ir              2250x2250 x3  up   3.12  gpu    3.38  down   2.66 ms  ok
+[ 39/210] misc_4.1.01                   256x256  x3  up   0.05  gpu    0.25  down   0.14 ms  ok
+[ 40/210] misc_4.1.02                   256x256  x3  up   0.05  gpu    0.26  down   0.12 ms  ok
+[ 41/210] misc_4.1.03                   256x256  x3  up   0.04  gpu    0.19  down   0.10 ms  ok
+[ 42/210] misc_4.1.04                   256x256  x3  up   0.07  gpu    0.35  down   0.12 ms  ok
+[ 43/210] misc_4.1.05                   256x256  x3  up   0.04  gpu    0.23  down   0.11 ms  ok
+[ 44/210] misc_4.1.06                   256x256  x3  up   0.06  gpu    0.24  down   0.11 ms  ok
+[ 45/210] misc_4.1.07                   256x256  x3  up   0.04  gpu    0.26  down   0.13 ms  ok
+[ 46/210] misc_4.1.08                   256x256  x3  up   0.07  gpu    0.28  down   0.13 ms  ok
+[ 47/210] misc_4.2.01                   512x512  x3  up   0.28  gpu    0.80  down   0.30 ms  ok
+[ 48/210] misc_4.2.03                   512x512  x3  up   0.21  gpu    0.79  down   0.24 ms  ok
+[ 49/210] misc_4.2.05                   512x512  x3  up   0.21  gpu    0.84  down   0.27 ms  ok
+[ 50/210] misc_4.2.06                   512x512  x3  up   0.21  gpu    0.83  down   0.30 ms  ok
+[ 51/210] misc_4.2.07                   512x512  x3  up   0.12  gpu    0.70  down   0.24 ms  ok
+[ 52/210] misc_5.1.09                   256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[ 53/210] misc_5.1.10                   256x256  x1  up   0.04  gpu    0.19  down   0.12 ms  ok
+[ 54/210] misc_5.1.11                   256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[ 55/210] misc_5.1.12                   256x256  x1  up   0.04  gpu    0.23  down   0.12 ms  ok
+[ 56/210] misc_5.1.13                   256x256  x1  up   0.07  gpu    0.20  down   0.14 ms  ok
+[ 57/210] misc_5.1.14                   256x256  x1  up   0.04  gpu    0.28  down   0.13 ms  ok
+[ 58/210] misc_5.2.08                   512x512  x1  up   0.07  gpu    0.79  down   0.25 ms  ok
+[ 59/210] misc_5.2.09                   512x512  x1  up   0.07  gpu    0.77  down   0.26 ms  ok
+[ 60/210] misc_5.2.10                   512x512  x1  up   0.07  gpu    0.77  down   0.27 ms  ok
+[ 61/210] misc_5.3.01                  1024x1024 x1  up   0.32  gpu    1.41  down   0.66 ms  ok
+[ 62/210] misc_5.3.02                  1024x1024 x1  up   0.33  gpu    1.92  down   0.76 ms  ok
+[ 63/210] misc_7.1.01                   512x512  x1  up   0.08  gpu    0.93  down   0.26 ms  ok
+[ 64/210] misc_7.1.02                   512x512  x1  up   0.09  gpu    0.79  down   0.28 ms  ok
+[ 65/210] misc_7.1.03                   512x512  x1  up   0.09  gpu    0.88  down   0.26 ms  ok
+[ 66/210] misc_7.1.04                   512x512  x1  up   0.09  gpu    0.79  down   0.26 ms  ok
+[ 67/210] misc_7.1.05                   512x512  x1  up   0.09  gpu    0.80  down   0.26 ms  ok
+[ 68/210] misc_7.1.06                   512x512  x1  up   0.08  gpu    0.83  down   0.26 ms  ok
+[ 69/210] misc_7.1.07                   512x512  x1  up   0.09  gpu    0.85  down   0.29 ms  ok
+[ 70/210] misc_7.1.08                   512x512  x1  up   0.13  gpu    0.90  down   0.31 ms  ok
+[ 71/210] misc_7.1.09                   512x512  x1  up   0.06  gpu    1.42  down   0.36 ms  ok
+[ 72/210] misc_7.1.10                   512x512  x1  up   0.08  gpu    1.27  down   0.25 ms  ok
+[ 73/210] misc_7.2.01                  1024x1024 x1  up   0.29  gpu    1.24  down   0.67 ms  ok
+[ 74/210] misc_boat.512                 512x512  x1  up   0.08  gpu    0.88  down   0.26 ms  ok
+[ 75/210] misc_gray21.512               512x512  x1  up   0.10  gpu    0.71  down   0.24 ms  ok
+[ 76/210] misc_house                    512x512  x3  up   0.20  gpu    0.80  down   0.26 ms  ok
+[ 77/210] misc_ruler.512                512x512  x1  up   0.08  gpu    0.68  down   0.23 ms  ok
+[ 78/210] sequences_6.1.01              256x256  x1  up   0.04  gpu    0.22  down   0.10 ms  ok
+[ 79/210] sequences_6.1.02              256x256  x1  up   0.04  gpu    0.22  down   0.13 ms  ok
+[ 80/210] sequences_6.1.03              256x256  x1  up   0.04  gpu    0.19  down   0.10 ms  ok
+[ 81/210] sequences_6.1.04              256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[ 82/210] sequences_6.1.05              256x256  x1  up   0.03  gpu    0.20  down   0.11 ms  ok
+[ 83/210] sequences_6.1.06              256x256  x1  up   0.03  gpu    0.26  down   0.13 ms  ok
+[ 84/210] sequences_6.1.07              256x256  x1  up   0.03  gpu    0.20  down   0.11 ms  ok
+[ 85/210] sequences_6.1.08              256x256  x1  up   0.04  gpu    0.20  down   0.12 ms  ok
+[ 86/210] sequences_6.1.09              256x256  x1  up   0.04  gpu    0.22  down   0.12 ms  ok
+[ 87/210] sequences_6.1.10              256x256  x1  up   0.04  gpu    0.21  down   0.11 ms  ok
+[ 88/210] sequences_6.1.11              256x256  x1  up   0.04  gpu    0.25  down   0.13 ms  ok
+[ 89/210] sequences_6.1.12              256x256  x1  up   0.04  gpu    0.26  down   0.13 ms  ok
+[ 90/210] sequences_6.1.13              256x256  x1  up   0.04  gpu    0.21  down   0.11 ms  ok
+[ 91/210] sequences_6.1.14              256x256  x1  up   0.07  gpu    0.27  down   0.13 ms  ok
+[ 92/210] sequences_6.1.15              256x256  x1  up   0.04  gpu    0.18  down   0.10 ms  ok
+[ 93/210] sequences_6.1.16              256x256  x1  up   0.05  gpu    0.23  down   0.14 ms  ok
+[ 94/210] sequences_6.2.01              256x256  x1  up   0.06  gpu    0.25  down   0.13 ms  ok
+[ 95/210] sequences_6.2.02              256x256  x1  up   0.05  gpu    0.22  down   0.12 ms  ok
+[ 96/210] sequences_6.2.03              256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[ 97/210] sequences_6.2.04              256x256  x1  up   0.05  gpu    0.26  down   0.10 ms  ok
+[ 98/210] sequences_6.2.05              256x256  x1  up   0.06  gpu    0.20  down   0.11 ms  ok
+[ 99/210] sequences_6.2.06              256x256  x1  up   0.04  gpu    0.21  down   0.10 ms  ok
+[100/210] sequences_6.2.07              256x256  x1  up   0.03  gpu    0.24  down   0.11 ms  ok
+[101/210] sequences_6.2.08              256x256  x1  up   0.06  gpu    0.22  down   0.11 ms  ok
+[102/210] sequences_6.2.09              256x256  x1  up   0.06  gpu    0.26  down   0.14 ms  ok
+[103/210] sequences_6.2.10              256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[104/210] sequences_6.2.11              256x256  x1  up   0.04  gpu    0.24  down   0.13 ms  ok
+[105/210] sequences_6.2.12              256x256  x1  up   0.04  gpu    0.21  down   0.11 ms  ok
+[106/210] sequences_6.2.13              256x256  x1  up   0.04  gpu    0.19  down   0.11 ms  ok
+[107/210] sequences_6.2.14              256x256  x1  up   0.04  gpu    0.19  down   0.10 ms  ok
+[108/210] sequences_6.2.15              256x256  x1  up   0.04  gpu    0.18  down   0.10 ms  ok
+[109/210] sequences_6.2.16              256x256  x1  up   0.06  gpu    0.21  down   0.11 ms  ok
+[110/210] sequences_6.2.17              256x256  x1  up   0.06  gpu    0.19  down   0.11 ms  ok
+[111/210] sequences_6.2.18              256x256  x1  up   0.03  gpu    0.19  down   0.10 ms  ok
+[112/210] sequences_6.2.19              256x256  x1  up   0.06  gpu    0.19  down   0.10 ms  ok
+[113/210] sequences_6.2.20              256x256  x1  up   0.04  gpu    0.21  down   0.13 ms  ok
+[114/210] sequences_6.2.21              256x256  x1  up   0.05  gpu    0.20  down   0.11 ms  ok
+[115/210] sequences_6.2.22              256x256  x1  up   0.03  gpu    0.18  down   0.10 ms  ok
+[116/210] sequences_6.2.23              256x256  x1  up   0.08  gpu    0.21  down   0.11 ms  ok
+[117/210] sequences_6.2.24              256x256  x1  up   0.04  gpu    0.25  down   0.13 ms  ok
+[118/210] sequences_6.2.25              256x256  x1  up   0.07  gpu    0.24  down   0.15 ms  ok
+[119/210] sequences_6.2.26              256x256  x1  up   0.04  gpu    0.20  down   0.12 ms  ok
+[120/210] sequences_6.2.27              256x256  x1  up   0.04  gpu    0.21  down   0.13 ms  ok
+[121/210] sequences_6.2.28              256x256  x1  up   0.04  gpu    0.20  down   0.12 ms  ok
+[122/210] sequences_6.2.29              256x256  x1  up   0.04  gpu    0.20  down   0.13 ms  ok
+[123/210] sequences_6.2.30              256x256  x1  up   0.04  gpu    0.20  down   0.11 ms  ok
+[124/210] sequences_6.2.31              256x256  x1  up   0.04  gpu    0.22  down   0.11 ms  ok
+[125/210] sequences_6.2.32              256x256  x1  up   0.04  gpu    0.19  down   0.11 ms  ok
+[126/210] sequences_6.3.01              256x256  x1  up   0.04  gpu    0.20  down   0.12 ms  ok
+[127/210] sequences_6.3.02              256x256  x1  up   0.04  gpu    0.77  down   0.11 ms  ok
+[128/210] sequences_6.3.03              256x256  x1  up   0.06  gpu    0.20  down   0.11 ms  ok
+[129/210] sequences_6.3.04              256x256  x1  up   0.04  gpu    0.22  down   0.11 ms  ok
+[130/210] sequences_6.3.05              256x256  x1  up   0.04  gpu    0.20  down   0.10 ms  ok
+[131/210] sequences_6.3.06              256x256  x1  up   0.04  gpu    0.20  down   0.10 ms  ok
+[132/210] sequences_6.3.07              256x256  x1  up   0.04  gpu    0.19  down   0.10 ms  ok
+[133/210] sequences_6.3.08              256x256  x1  up   0.06  gpu    0.27  down   0.13 ms  ok
+[134/210] sequences_6.3.09              256x256  x1  up   0.04  gpu    0.22  down   0.11 ms  ok
+[135/210] sequences_6.3.10              256x256  x1  up   0.06  gpu    0.21  down   0.11 ms  ok
+[136/210] sequences_6.3.11              256x256  x1  up   0.05  gpu    0.22  down   0.13 ms  ok
+[137/210] sequences_motion01.512        512x512  x1  up   0.07  gpu    0.86  down   0.29 ms  ok
+[138/210] sequences_motion02.512        512x512  x1  up   0.10  gpu    0.84  down   0.28 ms  ok
+[139/210] sequences_motion03.512        512x512  x1  up   0.05  gpu    0.81  down   0.23 ms  ok
+[140/210] sequences_motion04.512        512x512  x1  up   0.07  gpu    0.77  down   0.24 ms  ok
+[141/210] sequences_motion05.512        512x512  x1  up   0.09  gpu    0.85  down   0.29 ms  ok
+[142/210] sequences_motion06.512        512x512  x1  up   0.08  gpu    0.84  down   0.23 ms  ok
+[143/210] sequences_motion07.512        512x512  x1  up   0.08  gpu    0.78  down   0.25 ms  ok
+[144/210] sequences_motion08.512        512x512  x1  up   0.10  gpu    0.81  down   0.27 ms  ok
+[145/210] sequences_motion09.512        512x512  x1  up   0.09  gpu    0.89  down   0.50 ms  ok
+[146/210] sequences_motion10.512        512x512  x1  up   0.09  gpu    0.91  down   0.24 ms  ok
+[147/210] textures_1.1.01               512x512  x1  up   0.08  gpu    0.83  down   0.26 ms  ok
+[148/210] textures_1.1.02               512x512  x1  up   0.09  gpu    0.81  down   0.27 ms  ok
+[149/210] textures_1.1.03               512x512  x1  up   0.08  gpu    0.82  down   0.28 ms  ok
+[150/210] textures_1.1.04               512x512  x1  up   0.06  gpu    0.81  down   0.24 ms  ok
+[151/210] textures_1.1.05               512x512  x1  up   0.08  gpu    0.82  down   0.26 ms  ok
+[152/210] textures_1.1.06               512x512  x1  up   0.08  gpu    0.73  down   0.34 ms  ok
+[153/210] textures_1.1.07               512x512  x1  up   0.08  gpu    0.82  down   0.35 ms  ok
+[154/210] textures_1.1.08               512x512  x1  up   0.09  gpu    0.84  down   0.34 ms  ok
+[155/210] textures_1.1.09               512x512  x1  up   0.13  gpu    0.99  down   0.27 ms  ok
+[156/210] textures_1.1.10               512x512  x1  up   0.08  gpu    0.82  down   0.25 ms  ok
+[157/210] textures_1.1.11               512x512  x1  up   0.10  gpu    0.92  down   0.30 ms  ok
+[158/210] textures_1.1.12               512x512  x1  up   0.15  gpu    1.34  down   0.47 ms  ok
+[159/210] textures_1.1.13               512x512  x1  up   0.14  gpu    1.21  down   0.38 ms  ok
+[160/210] textures_1.2.01               512x512  x1  up   0.17  gpu    1.53  down   0.45 ms  ok
+[161/210] textures_1.2.02               512x512  x1  up   0.14  gpu    1.26  down   0.42 ms  ok
+[162/210] textures_1.2.03               512x512  x1  up   0.15  gpu    1.32  down   0.42 ms  ok
+[163/210] textures_1.2.04               512x512  x1  up   0.16  gpu    1.36  down   0.42 ms  ok
+[164/210] textures_1.2.05               512x512  x1  up   0.17  gpu    1.55  down   0.47 ms  ok
+[165/210] textures_1.2.06               512x512  x1  up   0.11  gpu    1.34  down   0.42 ms  ok
+[166/210] textures_1.2.07               512x512  x1  up   0.19  gpu    1.78  down   0.45 ms  ok
+[167/210] textures_1.2.08               512x512  x1  up   0.14  gpu    1.32  down   0.37 ms  ok
+[168/210] textures_1.2.09               512x512  x1  up   0.14  gpu    1.29  down   0.40 ms  ok
+[169/210] textures_1.2.10               512x512  x1  up   0.11  gpu    1.33  down   0.53 ms  ok
+[170/210] textures_1.2.11               512x512  x1  up   0.11  gpu    1.25  down   0.39 ms  ok
+[171/210] textures_1.2.12               512x512  x1  up   0.19  gpu    1.69  down   0.46 ms  ok
+[172/210] textures_1.2.13               512x512  x1  up   0.14  gpu    1.69  down   0.40 ms  ok
+[173/210] textures_1.3.01              1024x1024 x1  up   0.91  gpu    5.84  down   2.00 ms  ok
+[174/210] textures_1.3.02              1024x1024 x1  up   0.88  gpu    6.22  down   1.57 ms  ok
+[175/210] textures_1.3.03              1024x1024 x1  up   0.93  gpu    6.25  down   1.55 ms  ok
+[176/210] textures_1.3.04              1024x1024 x1  up   0.84  gpu    5.81  down   1.41 ms  ok
+[177/210] textures_1.3.05              1024x1024 x1  up   0.85  gpu    6.15  down   1.56 ms  ok
+[178/210] textures_1.3.06              1024x1024 x1  up   0.80  gpu    6.02  down   1.40 ms  ok
+[179/210] textures_1.3.07              1024x1024 x1  up   0.83  gpu    5.98  down   1.53 ms  ok
+[180/210] textures_1.3.08              1024x1024 x1  up   0.79  gpu    6.01  down   1.42 ms  ok
+[181/210] textures_1.3.09              1024x1024 x1  up   0.87  gpu    6.21  down   1.58 ms  ok
+[182/210] textures_1.3.10              1024x1024 x1  up   0.81  gpu    6.83  down   1.51 ms  ok
+[183/210] textures_1.3.11              1024x1024 x1  up   0.82  gpu    6.32  down   1.58 ms  ok
+[184/210] textures_1.3.12              1024x1024 x1  up   0.76  gpu    7.63  down   1.57 ms  ok
+[185/210] textures_1.3.13              1024x1024 x1  up   0.87  gpu    7.27  down   1.51 ms  ok
+[186/210] textures_1.4.01              1024x1024 x1  up   0.83  gpu    6.37  down   1.57 ms  ok
+[187/210] textures_1.4.02              1024x1024 x1  up   0.82  gpu    6.17  down   1.58 ms  ok
+[188/210] textures_1.4.03              1024x1024 x1  up   0.83  gpu    6.52  down   1.49 ms  ok
+[189/210] textures_1.4.04              1024x1024 x1  up   0.86  gpu    6.12  down   1.63 ms  ok
+[190/210] textures_1.4.05              1024x1024 x1  up   0.85  gpu    6.50  down   1.44 ms  ok
+[191/210] textures_1.4.06              1024x1024 x1  up   0.84  gpu   10.79  down   1.61 ms  ok
+[192/210] textures_1.4.07              1024x1024 x1  up   0.91  gpu    6.36  down   1.58 ms  ok
+[193/210] textures_1.4.08              1024x1024 x1  up   0.83  gpu    5.94  down   1.41 ms  ok
+[194/210] textures_1.4.09              1024x1024 x1  up   0.90  gpu    9.17  down   1.55 ms  ok
+[195/210] textures_1.4.10              1024x1024 x1  up   0.79  gpu    6.68  down   1.61 ms  ok
+[196/210] textures_1.4.11              1024x1024 x1  up   0.83  gpu    7.56  down   1.47 ms  ok
+[197/210] textures_1.4.12              1024x1024 x1  up   0.75  gpu    7.24  down   1.56 ms  ok
+[198/210] textures_1.5.01               512x512  x1  up   0.19  gpu    3.08  down   0.55 ms  ok
+[199/210] textures_1.5.02               512x512  x1  up   0.19  gpu    2.92  down   0.55 ms  ok
+[200/210] textures_1.5.03               512x512  x1  up   0.19  gpu    4.84  down   0.66 ms  ok
+[201/210] textures_1.5.04               512x512  x1  up   0.19  gpu    6.46  down   0.63 ms  ok
+[202/210] textures_1.5.05               512x512  x1  up   0.19  gpu    3.40  down   0.55 ms  ok
+[203/210] textures_1.5.06               512x512  x1  up   0.19  gpu    3.25  down   0.58 ms  ok
+[204/210] textures_1.5.07               512x512  x1  up   0.20  gpu    3.41  down   0.55 ms  ok
+[205/210] textures_texmos1.p512         512x512  x1  up   0.20  gpu    3.49  down   0.57 ms  ok
+[206/210] textures_texmos2.p512         512x512  x1  up   0.22  gpu    3.39  down   0.70 ms  ok
+[207/210] textures_texmos2.s512         512x512  x1  up   0.23  gpu    3.36  down   0.57 ms  ok
+[208/210] textures_texmos3.p512         512x512  x1  up   0.22  gpu    3.20  down   0.59 ms  ok
+[209/210] textures_texmos3.s512         512x512  x1  up   0.23  gpu    2.46  down   0.58 ms  ok
+[210/210] textures_texmos3b.p512        512x512  x1  up   0.22  gpu    2.55  down   0.62 ms  ok
+
+================ summary ================
+images ok / failed : 210 / 0
+pixels processed   : 87.2 MP
+disk read (decode) :     2447.6 ms
+host -> device     :       58.2 ms
+GPU (NPP) compute  :      377.5 ms  (231 MP/s)
+  first image only :       41.6 ms  (CUDA/NPP warm-up)
+  all the rest     :      335.9 ms  (259 MP/s)
+device -> host     :       98.6 ms
+disk write (encode):     5800.3 ms
+wall time          :     9091.1 ms
+per-image log      : output/run_log.csv

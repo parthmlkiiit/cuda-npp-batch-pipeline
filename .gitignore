@@ -1,0 +1,9 @@
+bin/
+build/
+tools/
+data/raw/
+data/sipi/
+proof_of_execution.tar.gz
+__pycache__/
+*.o
+*.exe
